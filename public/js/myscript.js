@@ -9,8 +9,7 @@ window.addEventListener('DOMContentLoaded', init)
 function showInfo(data) {
     // data comes through as a simple array since simpleSheet is turned on
     alert("Successfully processed " + data.length + " rows!")
-    //document.getElementById("food").innerHTML = "<strong>Foods:</strong> " + [ data[0].Name, data[1].Name, data[2].Name ].join(", ");
-    document.write
+    document.getElementById("food").innerHTML = "<strong>Foods:</strong> " + [ data[0].Name, data[1].Name, data[2].Name ].join(", ");
     console.log(data);
 }
 document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");
