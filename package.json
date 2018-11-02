@@ -4,6 +4,7 @@
   "description": "",
   "main": "node_server.js",
   "dependencies": {
+    "browserify": "^16.2.3",
     "express": "^4.16.4",
     "tabletop": "^1.5.2"
   },

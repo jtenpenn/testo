@@ -7,13 +7,8 @@ const port = 8080;
 
 
 
-app.get('/', (req,res) => {
-    fs.readFile('index.html', function(err, data) {
-        res.statusCode = 200;
-        res.setHeader('Content-Type','text/html');
-        res.end(data);
-    });
-});
+app.get('/', (req,res) => {});
+app.use(express.static('public'));
 
 app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
