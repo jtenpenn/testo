@@ -1,14 +1,23 @@
 {
-  "name": "testo",
+  "name": "yes",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "app.js",
+  "dependencies": {
+    "tabletop": "^1.5.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtenpenn/testo.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "tabletop": "^1.5.2"
-  }
+  "bugs": {
+    "url": "https://github.com/jtenpenn/testo/issues"
+  },
+  "homepage": "https://github.com/jtenpenn/testo#readme"
 }
