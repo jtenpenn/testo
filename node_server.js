@@ -1,19 +1,20 @@
-const http = require('http');
 const fs = require('fs');
+const express = require('express');
+const app = express();
 
 const hostname = 'localhost';
 const port = 8080;
 
 
 
-const server = http.createServer((req, res) => {
-    fs.readFile('testo.html', function(err, data) {
+app.get('/', (req,res) => {
+    fs.readFile('index.html', function(err, data) {
         res.statusCode = 200;
         res.setHeader('Content-Type','text/html');
         res.end(data);
     });
 });
 
-server.listen(port, hostname, () => {
+app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });

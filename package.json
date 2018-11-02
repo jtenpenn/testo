@@ -2,8 +2,9 @@
   "name": "yes",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "node_server.js",
   "dependencies": {
+    "express": "^4.16.4",
     "tabletop": "^1.5.2"
   },
   "devDependencies": {},
